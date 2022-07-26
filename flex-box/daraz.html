@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daraz</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .header{
+            background-color: whitesmoke;
+        }
+        .header ul{
+            display: flex;
+            list-style: none;
+            justify-content: flex-end;
+            font-size: 13px;
+            margin-right: 100px;
+        }
+        ul li{
+            margin-left: 50px;
+        }
+        .mainProduct{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            text-align: center;
+        }
+        .container{
+            display: flex;
+            background-color: white;
+            /* justify-content: space-evenly; */
+            align-items: center;
+            margin-top: 10px;
+            margin-bottom: 50px;
+        }
+        input{
+            font-size: 15px;
+            width: 500px;
+            border-radius: 5px 0 0 5px;
+            margin-left: 100px;
+            padding: 10px;
+            border: none;
+            background-color: whitesmoke;
+        }
+        .container .imgLogo{
+            height: 30px;
+            width: 150px;
+            margin-left: 100px;
+        }
+        .search{
+            /* margin-right: 30%; */
+            background-color: orangered;
+            padding: 10px;
+            color: white;
+        }
+        .cart{
+            font-size: 30px;
+            margin-left: 30px;
+        }
+        .moveImg{
+            height: 40px;
+            margin-left: 50px;
+        }
+        .product > img{
+            height: 100px;
+            width: 180px;
+            margin-top: 10px;
+        }
+        .product{
+            height: 200px;
+            width: 200px;            
+            flex-direction: column;
+            background-color: whitesmoke;
+            
+        }
+        button{
+            background-color:orangered;
+            font-size: 18px;
+            padding: 5px;
+            border-radius: 5px;
+            margin-top: 10px;
+            border: none;
+            color: white;            
+        }
+        .product > h4{
+            margin-top: 10px;
+        }
+        .product > p{
+            color: orangered;
+        }
+        .header .save{
+            color: orangered
+        }
+        ::placeholder{
+            text-indent: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <ul>
+            <li class="save">SAVE MORE ON APP</li>
+            <li>SELL ON DARAZ</li>
+            <li>CUSTOMER CARE</li>
+            <li>TRACK MY ORDER</li>
+            <li>LOG IN</li>
+            <li>SIGN UP</li>            
+        </ul>
+    </div>
+    <div class="container">
+        <a href="https://daraz.com.np" target="_blank"><img class="imgLogo" src="https://icms-image.slatic.net/images/ims-web/458d4688-ae26-4e6d-8f39-c26194de228a.png" alt="logo"></a>
+        <input type="text" placeholder="Search in Daraz">
+        <a href="./search.html"><i class="fa-solid fa-magnifying-glass search"></i></a>        
+        <span class="iconify cart" data-icon="bx:cart"></span>
+        <img class="moveImg" src="https://icms-image.slatic.net/images/ims-web/c116120e-aea1-4350-9f1c-c0eab8783647.gif" alt="moving_image">
+        
+    </div>
+    <div class="mainProduct">
+        <div class="product">
+            <img src="../images/headphone.jpg" alt="">
+            <h4>JBL Bluetooth Headset</h4>
+            <p>Rs.17,000</p>
+            <a href=""><button>Add to cart</button></a>
+            
+        </div>
+        <div class="product">
+            <img src="../images/iPhone-13-Pro-Max.jpg" alt="">
+            <h4>I Phone 13 Max Pro</h4>
+            <p>Rs.2,91,999</p>
+            <button>Add to cart</button>
+        </div>
+        <div class="product">
+            <img src="https://static-01.daraz.com.np/p/cf85f5dbe20e00621f917fb012173374.png" alt="">
+            <h4>Xeon Bluetooth Head Set</h4>
+            <p>Rs.19,000</p>
+            <button>Add to cart</button>
+        </div>
+        <div class="product">
+            <img src="https://static-01.daraz.com.np/p/91134b5271baff8cfd1ec20835cff037.jpg" alt="">
+            <h4>Kilometer hood</h4>
+            <p>Rs.1500</p>
+            <button>Add to cart</button>
+        </div>
+        <div class="product">
+            <img src="https://static-01.daraz.com.np/p/b847134d0b2b327817f70286adf48f48.jpg" alt="">
+            <h4>Mamaearch</h4>
+            <p>Rs.750</p>
+            <button>Add to cart</button>
+        </div>
+        <div class="product">
+            <img src="https://static-01.daraz.com.np/p/2d107b24c3700767bb5c392c73748fc1.jpg" alt="">
+            <h4>Levis Trouser</h4>
+            <p>Rs.1500</p>
+            <button>Add to cart</button>
+        </div>
+        <div class="product">
+            <img src="https://static-01.daraz.com.np/p/04065dd68f060c64fc5533adfeeece55.jpg" alt="">
+            <h4>Y Shape 3.5mm Audio Jack</h4>
+            <p>Rs.115</p>
+            <button>Add to cart</button>
+        </div>
+        <div class="product">
+            <img src="https://static-01.daraz.com.np/p/14d1bafde302a55f941770b990daaf8c.jpg" alt="">
+            <h4>Zyg-518</h4>
+            <p>Rs.585</p>
+            <button>Add to cart</button>
+        </div>
+        <div class="product">
+            <img src="https://static-01.daraz.com.np/p/6444c6f7399826bea8374ee6519e4d7f.jpg" alt="">
+            <h4>Fun Station</h4>
+            <p>Rs.499</p>
+            <button>Add to cart</button>           
+        </div>
+        <div class="product">
+            <img src="https://static-01.daraz.com.np/p/925bd89a69a4414011323efc034f8a17.jpg" alt="">
+            <h4>MRD Auto</h4>
+            <p>Rs.3500</p>
+            <button>Add to cart</button>
+        </div>
+        <div class="product">
+            <img src="https://static-01.daraz.com.np/p/9783d1cc7431e87370d8c5dd3bc780e4.jpg_200x200q75.jpg_.webp" alt="">
+            <h4>MI Beard Trimmer</h4>
+            <p>Rs.1799</p>
+            <button>Add to cart</button>
+        </div>
+        <div class="product">
+            <img src="https://static-01.daraz.com.np/p/313cce818010fbee889448616843dbac.jpg_200x200q75.jpg_.webp" alt="">
+            <h4>I Phone 11</h4>
+            <p>Rs.76,000</p>
+            <button>Add to cart</button>
+        </div>      
+    </div>    
+</body>
+</html>

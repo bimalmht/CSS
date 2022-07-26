@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selector</title>
+    <style>
+        *{
+            font-size: 40px;
+            background-color: blueviolet;
+            margin: 0;
+            padding: 0;
+        }
+        .div2 > h2 {
+            background-color: blue;
+        }
+        .divsub > h2 {
+            background-color: red;
+        }
+        .divDesc h2 {
+            background-color: black;
+            color: white;
+        }
+        .exmpSub h2{
+            background-color: red;
+            color: white
+        }
+        .groupSelector .head1,.head2,.head3{
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <!--Selector-->
+    <!-- 1. Universal Selector (*): it applies to all inside body-->
+    <div class="div1">
+        <p>Hello World</p>
+    </div>
+    <p>Hi my name is Bimal.</p>
+
+    <!-- 2. Child selector (">"): Selects only their Child-->
+    <div class="div2">
+        <h2 class="heading2">heading2</h2>
+        <div class="divsub">
+            <h2>heading3</h2>
+        </div>
+    </div>
+    
+    <!-- 3. Descendant Selector-->
+    <div class="divDesc">
+        <h2>More Descendant</h2>
+        <div class="divSubDesc">
+            <h2>Hello Descendant</h2>
+        </div>
+        <h2>Hi my dear</h2>
+    </div>
+
+    <div class="DesExmp">
+        <h2>Descendant Example</h2>
+        <div class="exmpSub">
+            <h2>Sub Example Descendant</h2>
+        </div>
+        <h2>Example Desc Outside</h2>
+    </div>
+    <!-- 4. Group Selector-->
+    <div class="groupSelector">
+        <h1 class="head1">Group Selector 1</h1>
+        <h2 class="head2">Group Selector 2</h2>
+        <h3 class="head3">Group Selector 3</h3>
+    </div>
+</body>
+</html>

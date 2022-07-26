@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+    <style>
+        .inlinediv p{
+            display: inline;
+            background-color: blue;
+            color: white;
+        }
+        .inlineBlockDiv {
+            display: inline-block;
+            height: 200px;
+            width: 500px;
+            background-color: green;
+        }
+        .blockDiv{
+            display: block;
+            background-color:red;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!--inline, inline-block, block-->
+
+    <!-- 1. inline: Takes required width only-->
+    <!--cannot set height & width-->
+    <div class="inlinediv">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit necessitatibus dignissimos ipsa dolor culpa labore, ratione reiciendis perferendis nihil blanditiis?</p>
+    </div> 
+    <!-- 2. inline-block-->
+    <div class="inlineBlockDiv">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum voluptas quos veritatis tempora quaerat natus odio omnis ex dolorum, repellat enim repellendus porro? Veritatis nostrum, aliquam sint officiis laudantium assumenda!</p>
+    </div>
+    <!-- 3. block: takes the full width-->
+    <div class="blockDiv">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo explicabo nihil placeat deserunt ipsam tempore excepturi, est mollitia officia doloremque?</p>
+    </div>
+</body>
+</html>
